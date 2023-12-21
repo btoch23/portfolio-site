@@ -55,10 +55,10 @@ const Contact = () => {
                             </Typography>
                         </Box>
                         <Box sx={{ display: 'flex', mt: 2 }}>
-                            <IconButton href="https://github.com/btoch23">
+                            <IconButton href="https://github.com/btoch23" target="_blank">
                                 <GitHubIcon fontSize="large" sx={{ color: 'red.light', pr: 0.5}} />
                             </IconButton>
-                            <IconButton href="https://www.linkedin.com/in/brian-tochterman-jr-991a1189/">
+                            <IconButton href="https://www.linkedin.com/in/brian-tochterman-jr-991a1189/" target="_blank">
                                 <LinkedInIcon fontSize="large" sx={{ color: 'red.light', pr: 0.5}} />
                             </IconButton>
                         </Box>  

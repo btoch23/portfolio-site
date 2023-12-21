@@ -48,7 +48,7 @@ const Projects = () => {
                 <Box sx={{ marginTop: 4, display: 'flex', flexDirection: {xs: 'column', sm: 'row'}, gap: 2, justifyContent: 'space-around' }}>
                   {projectsArr.map((project) => (
                         <Card key={project.id} sx={{ width: 345, minHeight: 260, backgroundColor: 'hunterGreen.light', color: 'white.main' }}>
-                            <CardActionArea href={project.link}>
+                            <CardActionArea href={project.link} target='_blank'>
                                 <CardMedia
                                     sx={{ height: 180 }}
                                     image={project.image}
