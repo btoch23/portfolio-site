@@ -13,7 +13,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './Header.css'
 
-const pages = ['projects', 'skills', 'contact'];
+const pages = ['skills', 'projects', 'contact'];
 
 const theme = createTheme({
   palette: {
