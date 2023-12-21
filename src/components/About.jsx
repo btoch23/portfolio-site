@@ -33,7 +33,7 @@ const About = () => {
                                 I&apos;m a web developer
                             </Typography>
                         </Box>
-                        <Box sx={{ display: {sm: 'none', md: 'flex', maxWidth: '700px'}}}>
+                        <Box sx={{ display: {xs: 'none', md: 'flex', maxWidth: '700px'}}}>
                             <Typography sx={{ pt: 3, textAlign: 'left', color: '#F2E8CF'}} variant='body1'>
                                 I&apos;ve spent 15 years working in the restaurant industry and now I&apos;m transitioning into the tech world. Currently, I&apos;m located in Chicago, Illinois with my four beautiful cats. When I&apos;m not building apps and websites, I teach improv to kids, play Dungeons & Dragons, and I love to rock climb!
                             </Typography>

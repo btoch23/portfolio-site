@@ -45,7 +45,7 @@ const Projects = () => {
                     A mixture of solo projects and apps that I helped developed with a team
                   </Typography>
                 </Box>
-                <Box sx={{ marginTop: 4, display: 'flex', flexDirection: 'row', gap: 2, justifyContent: 'space-around' }}>
+                <Box sx={{ marginTop: 4, display: 'flex', flexDirection: {xs: 'column', sm: 'row'}, gap: 2, justifyContent: 'space-around' }}>
                   {projectsArr.map((project) => (
                         <Card key={project.id} sx={{ width: 345, minHeight: 260, backgroundColor: 'hunterGreen.light', color: 'white.main' }}>
                             <CardActionArea href={project.link}>

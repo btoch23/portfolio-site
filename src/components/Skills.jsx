@@ -43,7 +43,7 @@ const Skills = () => {
                     <Chip 
                       sx={{
                         paddingY: 3.5,
-                        width: '40%',
+                        width: {xs: '100%', sm: '40%'},
                         margin: 1, 
                         fontSize: 20, 
                         borderColor: 'hunterGreen.light',
