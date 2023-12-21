@@ -40,7 +40,7 @@ const Contact = () => {
                             Hire Me
                         </Typography>
                         <Typography variant='subtitle1' color="white.main" sx={{ textAlign: 'left' }}>
-                            I&apos;m excited to join your team and to help you build the app or website of your dreams!
+                            I&apos;m excited to join your team and to help you build the app or website of your dreams! Reach out and let me know what I can do for you!
                         </Typography>
                         <Box sx={{ display: 'flex', flexDirection: 'row', mt: 2 }}>
                             <EmailIcon sx={{ color: 'red.light', pr: 0.5}} />
