@@ -31,7 +31,7 @@ export const projects = [
     },
     {
         title: 'Circuit Workout Creator',
-        subtitle: 'Javascript and APIs',
+        subtitle: 'Javascript, Bootstrap, and APIs',
         description: 'A web app to design a circuit workout',
         link: 'https://github.com/btoch23/circuit-creator',
         image: './circuit.png',
