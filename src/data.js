@@ -1,3 +1,5 @@
+import { createTheme } from "@mui/material";
+
 export const skills = [
     'HTML', 
     'CSS', 
@@ -33,3 +35,21 @@ export const projects = [
         id: 2
     }
 ]
+
+export const theme = createTheme({
+    palette: {
+      hunterGreen: {
+        main: '#386641',
+        light: '#50915D',
+        dark: '#24422A'
+      },
+      white: {
+        main: '#F2E8CF',
+      },
+      red: {
+        main: '#BC4749',
+        light: '#CE7879',
+        dark: '#963638',
+      }
+    }
+  })

@@ -1,27 +1,10 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import { Container, Box, Typography, IconButton } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
-const theme = createTheme({
-    palette: {
-      hunterGreen: {
-        main: '#386641',
-        light: '#50915D',
-        dark: '#24422A'
-      },
-      white: {
-        main: '#F2E8CF',
-      },
-      red: {
-        main: '#BC4749',
-        light: '#CE7879',
-        dark: '#963638',
-      }
-    }
-})
+import { theme } from "../data";
 
 const Contact = () => {
     return (

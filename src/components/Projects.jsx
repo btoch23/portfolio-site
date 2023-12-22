@@ -1,5 +1,5 @@
-import { projects } from "../data";
-import { createTheme, ThemeProvider } from "@mui/material";
+import { projects, theme } from "../data";
+import { ThemeProvider } from "@mui/material";
 import { 
     Container, 
     Typography, 
@@ -12,24 +12,6 @@ import {
 import TerminalIcon from '@mui/icons-material/Terminal';
 
 const projectsArr = projects;
-
-const theme = createTheme({
-    palette: {
-      hunterGreen: {
-        main: '#386641',
-        light: '#50915D',
-        dark: '#24422A'
-      },
-      white: {
-        main: '#F2E8CF',
-      },
-      red: {
-        main: '#BC4749',
-        light: '#CE7879',
-        dark: '#963638',
-      }
-    }
-})
 
 const Projects = () => {
     return (

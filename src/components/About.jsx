@@ -1,23 +1,6 @@
 import { Container, Typography, Box } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const theme = createTheme({
-    palette: {
-      hunterGreen: {
-        main: '#386641',
-        light: '#50915D',
-        dark: '#24422A'
-      },
-      white: {
-        main: '#F2E8CF',
-      },
-      red: {
-        main: '#BC4749',
-        light: '#CE7879',
-        dark: '#963638',
-      }
-    }
-  })
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "../data";
 
 const About = () => {
     return (

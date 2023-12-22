@@ -1,28 +1,10 @@
 import { Container, Typography, Box, Chip } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { skills } from '../data';
+import { ThemeProvider } from "@mui/material/styles";
+import { skills, theme } from '../data';
 import MemoryIcon from '@mui/icons-material/Memory';
 import CodeIcon from '@mui/icons-material/Code';
 
 const skillsArr = skills;
-
-const theme = createTheme({
-    palette: {
-      hunterGreen: {
-        main: '#386641',
-        light: '#50915D',
-        dark: '#24422A'
-      },
-      white: {
-        main: '#F2E8CF',
-      },
-      red: {
-        main: '#BC4749',
-        light: '#CE7879',
-        dark: '#963638',
-      }
-    }
-})
 
 const Skills = () => {
     return (

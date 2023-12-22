@@ -10,28 +10,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CodeIcon from '@mui/icons-material/Code';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from '../data';
 import './Header.css'
 
 const pages = ['skills', 'projects', 'contact'];
-
-const theme = createTheme({
-  palette: {
-    hunterGreen: {
-      main: '#386641',
-      light: '#50915D',
-      dark: '#24422A'
-    },
-    white: {
-      main: '#F2E8CF',
-    },
-    red: {
-      main: '#BC4749',
-      light: '#CE7879',
-      dark: '#963638',
-    }
-  }
-})
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
