@@ -14,7 +14,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '../data';
 import './Header.css'
 
-const pages = ['skills', 'projects', 'contact'];
+const pages = ['skills', 'projects', 'certifications', 'contact'];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

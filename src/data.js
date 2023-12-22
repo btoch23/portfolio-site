@@ -7,6 +7,9 @@ export const skills = [
     'Javascript', 
     'ReactJS', 
     'React Native',
+    'Communication',
+    'Teamwork',
+    'Adaptability'
 ];
 
 export const projects = [
@@ -34,7 +37,16 @@ export const projects = [
         image: './circuit.png',
         id: 2
     }
-]
+];
+
+export const certificates = [
+  {
+    school: 'NuCamp Bootcamp',
+    topic: 'Front End Web and Mobile Development',
+    date: '12/18/23',
+    certificate: './frontendcert.png'
+  },
+];
 
 export const theme = createTheme({
     palette: {
@@ -52,4 +64,4 @@ export const theme = createTheme({
         dark: '#963638',
       }
     }
-  })
+  });
