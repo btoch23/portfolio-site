@@ -72,13 +72,16 @@ const styles = {
     },
     projectBox: {
         marginTop: 4, 
-        display: 'flex', 
-        flexDirection: {xs: 'column', sm: 'row'}, 
+        display: 'grid',
+        gridTemplateColumns: {
+            sm: 'repeat(2, 1fr)',
+            lg: 'repeat(4, 1fr)'
+        }, 
         gap: 2, 
-        justifyContent: 'space-around' 
+        justifyContent: 'center' 
     },
     projectCard: { 
-        width: 345, 
+        width: 'auto',
         minHeight: 260, 
         backgroundColor: 'hunterGreen.light', 
         color: 'white.main' 
