@@ -13,7 +13,7 @@ const Certifications = () => {
                 <Container sx={styles.container}>
                     <Box>
                         <BookIcon sx={styles.icon} />
-                        <Typography sx={{ color: 'red.main'}} variant="h2">
+                        <Typography sx={{ color: 'red.main'}} variant='h3'>
                             Certifications
                         </Typography>
                         <Typography sx={styles.subtitle} variant="subtitle1">
@@ -59,7 +59,7 @@ const styles = {
     },
     subtitle: { 
         color: 'white.main', 
-        mt: 2 
+        pt: 2 
     },
     certificateBox: { 
         mt: 3, 

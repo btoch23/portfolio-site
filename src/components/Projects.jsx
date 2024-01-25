@@ -20,7 +20,7 @@ const Projects = () => {
             <Container sx={styles.container}>
                 <Box>
                   <TerminalIcon sx={styles.icon} />
-                  <Typography sx={{ color: 'red.main', }} variant="h2">
+                  <Typography sx={{ color: 'red.main', }} variant="h3">
                     Things I&apos;ve Built
                   </Typography>
                   <Typography sx={styles.subtitle} variant="subtitle1">

@@ -13,7 +13,7 @@ const Skills = () => {
               <Container sx={styles.container}>
                 <Box>
                   <MemoryIcon sx={styles.icon} />
-                  <Typography sx={{ color: 'red.main'}} variant="h2">
+                  <Typography sx={{ color: 'red.main'}} variant="h3">
                     Skills and Technologies
                   </Typography>
                   <Typography sx={styles.subtitle} variant="subtitle1">
