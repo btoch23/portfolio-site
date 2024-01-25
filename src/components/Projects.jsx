@@ -17,19 +17,19 @@ const Projects = () => {
     return (
         <ThemeProvider theme={theme}>
             <Box component='section' id='projects'>
-            <Container sx={{ padding: 5, display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+            <Container sx={styles.container}>
                 <Box>
-                  <TerminalIcon sx={{ fontSize: 75, color: 'red.light', mb: 3 }} />
+                  <TerminalIcon sx={styles.icon} />
                   <Typography sx={{ color: 'red.main', }} variant="h2">
                     Things I&apos;ve Built
                   </Typography>
-                  <Typography sx={{ color: 'white.main', mt: 2 }} variant="subtitle1">
+                  <Typography sx={styles.subtitle} variant="subtitle1">
                     A mixture of solo projects and apps that I helped developed with a team
                   </Typography>
                 </Box>
-                <Box sx={{ marginTop: 4, display: 'flex', flexDirection: {xs: 'column', sm: 'row'}, gap: 2, justifyContent: 'space-around' }}>
+                <Box sx={styles.projectBox}>
                   {projectsArr.map((project) => (
-                        <Card key={project.id} sx={{ width: 345, minHeight: 260, backgroundColor: 'hunterGreen.light', color: 'white.main' }}>
+                        <Card key={project.id} sx={styles.projectCard}>
                             <CardActionArea href={project.link} target='_blank'>
                                 <CardMedia
                                     sx={{ height: 180 }}
@@ -52,6 +52,37 @@ const Projects = () => {
             </Box>
         </ThemeProvider>
     )
+}
+
+const styles = {
+    container: {
+        padding: 5, 
+        display: 'flex', 
+        justifyContent: 'center', 
+        flexDirection: 'column'
+    },
+    icon: { 
+        fontSize: 75, 
+        color: 'red.light', 
+        mb: 3 
+    },
+    subtitle: { 
+        color: 'white.main', 
+        mt: 2 
+    },
+    projectBox: {
+        marginTop: 4, 
+        display: 'flex', 
+        flexDirection: {xs: 'column', sm: 'row'}, 
+        gap: 2, 
+        justifyContent: 'space-around' 
+    },
+    projectCard: { 
+        width: 345, 
+        minHeight: 260, 
+        backgroundColor: 'hunterGreen.light', 
+        color: 'white.main' 
+    },
 }
 
 export default Projects;

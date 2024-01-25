@@ -36,6 +36,14 @@ export const projects = [
         link: 'https://github.com/btoch23/circuit-creator',
         image: './circuit.png',
         id: 2
+    },
+    {
+      title: 'Poetic RESTful API',
+      subtitle: 'NodeJS, Express, MongoDB',
+      description: 'A platform powered by NodeJS and Express to provide poets a place to share and discuss their writing with fellow artists',
+      link: 'https://github.com/btoch23/Poetic-Backend',
+      image:'./poeticBackend.png',
+      id: 3
     }
 ];
 

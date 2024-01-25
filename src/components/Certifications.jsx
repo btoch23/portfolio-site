@@ -10,19 +10,19 @@ const Certifications = () => {
     return (
         <ThemeProvider theme={theme}>
             <Box component='section' id="certifications">
-                <Container sx={{ p: 5, display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                <Container sx={styles.container}>
                     <Box>
-                        <BookIcon sx={{ fontSize: 75, color: 'red.light', mb: 3 }} />
+                        <BookIcon sx={styles.icon} />
                         <Typography sx={{ color: 'red.main'}} variant="h2">
                             Certifications
                         </Typography>
-                        <Typography sx={{ color: 'white.main', mt: 2 }} variant="subtitle1">
+                        <Typography sx={styles.subtitle} variant="subtitle1">
                             I&apos;ll be graduating from NuCamp&apos;s Full-Stack Web and Mobile Development Bootcamp on January 22, 2024
                         </Typography>
                     </Box>
-                    <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
+                    <Box sx={styles.certificateBox}>
                         {certificatesArr.map((cert) => (
-                            <Card key={cert.school} sx={{ width: 345, minHeight: 260, backgroundColor: 'hunterGreen.light', color: 'white.main' }}>
+                            <Card key={cert.school} sx={styles.certificateCard}>
                                 <CardMedia 
                                     sx={{ height: 260 }}
                                     image={cert.certificate}
@@ -43,6 +43,35 @@ const Certifications = () => {
             </Box>
         </ThemeProvider>
     )
+}
+
+const styles = {
+    container: { 
+        p: 5, 
+        display: 'flex', 
+        justifyContent: 'center', 
+        flexDirection: 'column' 
+    },
+    icon: { 
+        fontSize: 75, 
+        color: 'red.light', 
+        mb: 3 
+    },
+    subtitle: { 
+        color: 'white.main', 
+        mt: 2 
+    },
+    certificateBox: { 
+        mt: 3, 
+        display: 'flex', 
+        justifyContent: 'center' 
+    },
+    certificateCard: { 
+        width: 345, 
+        minHeight: 260, 
+        backgroundColor: 'hunterGreen.light', 
+        color: 'white.main' 
+    }
 }
 
 export default Certifications;

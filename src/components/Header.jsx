@@ -29,29 +29,21 @@ const Header = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="fixed" sx={{ height: '90px', alignItems: 'center', backgroundColor: 'hunterGreen.main' }}>
+      <AppBar position="fixed" sx={styles.navbar}>
         <Container>
           <Toolbar disableGutters sx={{ height: '90px' }}>
-            <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, }} color='white' />
+            <CodeIcon sx={styles.icon} color='white' />
             <Typography
               className='title'
               variant="h5"
               noWrap
               component="a"
               href="#about"
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.1rem',
-                textDecoration: 'none',
-                color: '#F2E8CF'
-              }}
+              sx={styles.expandedTitle}
             >
               BRIAN TOCHTERMAN 
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <Box sx={styles.menuBox}>
               <IconButton
                 size="large"
                 aria-label="menu"
@@ -87,33 +79,24 @@ const Header = () => {
                 ))}
               </Menu>
             </Box>
-            <CodeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} color='white' />
+            <CodeIcon sx={styles.icon} color='white' />
             <Typography
               className='title'
               variant="h5"
               noWrap
               component="a"
               href="#about"
-              sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.1rem',
-                color: '#F2E8CF',
-                textDecoration: 'none',
-              }}
+              sx={styles.minimizedTitle}
             >
               BRIAN TOCHTERMAN
             </Typography>     
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={styles.pagesBox}>
               {pages.map((page) => (
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
                   color='white'
-                  sx={{ my: 2, display: 'block', fontSize: '16px' }}
+                  sx={styles.pageButton}
                   href={`#${page}`}
                 >
                   {page}
@@ -126,4 +109,64 @@ const Header = () => {
     </ThemeProvider>
   );
 }
+
+const styles = {
+  navbar: { 
+    height: '90px', 
+    alignItems: 'center', 
+    backgroundColor: 'hunterGreen.main' 
+  },
+  icon: { 
+    display: { 
+      xs: 'none', 
+      md: 'flex' 
+    }, 
+    mr: 1 
+  },
+  expandedTitle: {
+    mr: 2,
+    display: { 
+      xs: 'none', 
+      md: 'flex' 
+    },
+    fontFamily: 'monospace',
+    fontWeight: 700,
+    letterSpacing: '.1rem',
+    color: '#F2E8CF',
+    textDecoration: 'none',
+  },
+  menuBox: { 
+    flexGrow: 1, 
+    display: { 
+      xs: 'flex', 
+      md: 'none' 
+    } 
+  },
+  minimizedTitle: {
+    mr: 2,
+    display: { 
+      xs: 'flex', 
+      md: 'none' 
+    },
+    flexGrow: 1,
+    fontFamily: 'monospace',
+    fontWeight: 700,
+    letterSpacing: '.1rem',
+    color: '#F2E8CF',
+    textDecoration: 'none',
+  },
+  pagesBox: { 
+    flexGrow: 1, 
+    display: { 
+      xs: 'none', 
+      md: 'flex' 
+    } 
+  },
+  pageButton: {
+    my: 2, 
+    display: 'block', 
+    fontSize: '16px' 
+  }
+}
+
 export default Header;
