@@ -14,13 +14,13 @@ const Skills = () => {
                 <Box>
                   <MemoryIcon sx={styles.icon} />
                   <Typography sx={{ color: 'red.main'}} variant="h3">
-                    Skills and Technologies
+                    What I&apos;m Good At
                   </Typography>
                   <Typography sx={styles.subtitle} variant="subtitle1">
                     I&apos;m proficient in a number of technologies, libraries, and frameworks and I have excellent interpersonal and customer service skills
                   </Typography>
                 </Box>
-                <Box sx={{ marginTop: 3 }}>
+                <Box sx={styles.skillsBox}>
                   {skillsArr[0].map((skill) => (
                     <Chip 
                       sx={styles.frontendChip} 
@@ -36,7 +36,7 @@ const Skills = () => {
                       label={skill} 
                       key={skill} 
                       variant="outlined"
-                      icon={<CodeIcon color="red.light" />}
+                      icon={<CodeIcon color="red.main" />}
                     />
                   ))}
                   {skillsArr[2].map((skill) => (
@@ -71,26 +71,37 @@ const styles = {
     color: 'white.main', 
     mt: 2 
   },
+  skillsBox: { 
+    mt: 4,
+    display: 'grid',
+    gridTemplateColumns: {
+      xs: 'repeat(2, 1fr)',
+      sm: 'repeat(3, 1fr)'
+    },
+    gap: 2,
+    justifyContent: 'center'
+  },
   frontendChip: {
     paddingY: 3.5,
-    width: {xs: '100%', sm: '30%'},
-    margin: 1, 
+    width: 'auto',
+    minWidth: '190px',
+    // margin: 1, 
     fontSize: 20, 
     borderColor: 'hunterGreen.light',
     color: 'hunterGreen.light',
   },
   backendChip: {
     paddingY: 3.5,
-    width: {xs: '100%', sm: '30%'},
-    margin: 1, 
+    width: 'auto',
+    // margin: 1, 
     fontSize: 20, 
     borderColor: 'red.main',
     color: 'red.main',
   },
   generalChip: {
     paddingY: 3.5,
-    width: {xs: '100%', sm: '30%'},
-    margin: 1, 
+    width: 'auto',
+    // margin: 1, 
     fontSize: 20, 
     borderColor: 'white.main',
     color: 'white.main',

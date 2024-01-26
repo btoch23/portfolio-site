@@ -14,10 +14,10 @@ const Certifications = () => {
                     <Box>
                         <BookIcon sx={styles.icon} />
                         <Typography sx={{ color: 'red.main'}} variant='h3'>
-                            Certifications
+                            Courses I&apos;ve Taken
                         </Typography>
                         <Typography sx={styles.subtitle} variant="subtitle1">
-                            I&apos;ll be graduating from NuCamp&apos;s Full-Stack Web and Mobile Development Bootcamp on January 22, 2024
+                            I graduated from NuCamp&apos;s Full-Stack Web and Mobile Development Bootcamp on January 25, 2024
                         </Typography>
                     </Box>
                     <Box sx={styles.certificateBox}>

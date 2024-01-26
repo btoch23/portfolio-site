@@ -24,7 +24,7 @@ const Projects = () => {
                     Things I&apos;ve Built
                   </Typography>
                   <Typography sx={styles.subtitle} variant="subtitle1">
-                    A mixture of solo projects and apps that I helped developed with a team
+                    A mixture of solo projects and apps that I helped develop with a team
                   </Typography>
                 </Box>
                 <Box sx={styles.projectBox}>
