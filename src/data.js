@@ -1,15 +1,24 @@
 import { createTheme } from "@mui/material";
 
 export const skills = [
-    'HTML', 
-    'CSS', 
-    'Bootstrap', 
-    'Javascript', 
-    'ReactJS', 
-    'React Native',
-    'Communication',
-    'Teamwork',
-    'Adaptability'
+  [
+      'HTML', 
+      'CSS',  
+      'Javascript', 
+      'ReactJS',
+      'Bootstrap',
+      'Material UI'
+  ],
+  [
+      'NodeJS',
+      'Express',
+      'MongoDB' 
+  ],
+  [
+      'Communication',
+      'Teamwork',
+      'Adaptability'
+  ]  
 ];
 
 export const projects = [
@@ -38,21 +47,33 @@ export const projects = [
         id: 2
     },
     {
-      title: 'Poetic RESTful API',
-      subtitle: 'NodeJS, Express, MongoDB',
-      description: 'A platform powered by NodeJS and Express to provide poets a place to share and discuss their writing with fellow artists',
-      link: 'https://github.com/btoch23/Poetic-Backend',
-      image:'./poeticBackend.png',
-      id: 3
+        title: 'Poetic RESTful API',
+        subtitle: 'NodeJS, Express, MongoDB',
+        description: 'A platform powered by NodeJS and Express to provide poets a place to share and discuss their writing with fellow artists',
+        link: 'https://github.com/btoch23/Poetic-Backend',
+        image:'./poeticBackend.png',
+        id: 3
     }
 ];
 
 export const certificates = [
   {
     school: 'NuCamp Bootcamp',
-    topic: 'Front End Web and Mobile Development',
+    topic: 'Front-End Web and Mobile Development',
     date: '12/18/23',
     certificate: './frontendcert.png'
+  },
+  {
+    school: 'NuCamp Bootcamp',
+    topic: 'Back-End Development: NodeJS, Express, MongoDB',
+    date: '1/25/24',
+    certificate: './backendcert.png'
+  },
+  {
+    school: 'NuCamp Bootcamp',
+    topic: 'Full-Stack Web and Mobile Development',
+    date: '1/25/24',
+    certificate: './fullstackcert.png'
   },
 ];
 

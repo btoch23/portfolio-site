@@ -124,7 +124,7 @@ const styles = {
     mr: 1 
   },
   expandedTitle: {
-    mr: 2,
+    mr: 1,
     display: { 
       xs: 'none', 
       md: 'flex' 

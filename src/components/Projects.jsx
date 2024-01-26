@@ -71,7 +71,7 @@ const styles = {
         mt: 2 
     },
     projectBox: {
-        marginTop: 4, 
+        mt: 4, 
         display: 'grid',
         gridTemplateColumns: {
             sm: 'repeat(2, 1fr)',

@@ -22,7 +22,7 @@ const Certifications = () => {
                     </Box>
                     <Box sx={styles.certificateBox}>
                         {certificatesArr.map((cert) => (
-                            <Card key={cert.school} sx={styles.certificateCard}>
+                            <Card key={cert.topic} sx={styles.certificateCard}>
                                 <CardMedia 
                                     sx={{ height: 260 }}
                                     image={cert.certificate}
@@ -62,12 +62,16 @@ const styles = {
         pt: 2 
     },
     certificateBox: { 
-        mt: 3, 
-        display: 'flex', 
+        mt: 4, 
+        display: 'grid',
+        gridTemplateColumns: {
+            md: 'repeat(3, 1fr)'
+        },
+        gap: 2,
         justifyContent: 'center' 
     },
     certificateCard: { 
-        width: 345, 
+        width: 'auto', 
         minHeight: 260, 
         backgroundColor: 'hunterGreen.light', 
         color: 'white.main' 

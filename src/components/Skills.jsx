@@ -17,17 +17,35 @@ const Skills = () => {
                     Skills and Technologies
                   </Typography>
                   <Typography sx={styles.subtitle} variant="subtitle1">
-                    I&apos;m proficient in a number of front-end technologies and frameworks and I have excellent interpersonal and customer service skills
+                    I&apos;m proficient in a number of technologies, libraries, and frameworks and I have excellent interpersonal and customer service skills
                   </Typography>
                 </Box>
                 <Box sx={{ marginTop: 3 }}>
-                  {skillsArr.map((skill) => (
+                  {skillsArr[0].map((skill) => (
                     <Chip 
-                      sx={styles.chip} 
+                      sx={styles.frontendChip} 
                       label={skill} 
-                      key={skill.indexOf()} 
+                      key={skill} 
                       variant="outlined"
                       icon={<CodeIcon color="hunterGreen.light" />}
+                    />
+                  ))}
+                  {skillsArr[1].map((skill) => (
+                    <Chip 
+                      sx={styles.backendChip} 
+                      label={skill} 
+                      key={skill} 
+                      variant="outlined"
+                      icon={<CodeIcon color="red.light" />}
+                    />
+                  ))}
+                  {skillsArr[2].map((skill) => (
+                    <Chip 
+                      sx={styles.generalChip} 
+                      label={skill} 
+                      key={skill} 
+                      variant="outlined"
+                      icon={<CodeIcon color="white.main" />}
                     />
                   ))}
                 </Box>
@@ -53,14 +71,30 @@ const styles = {
     color: 'white.main', 
     mt: 2 
   },
-  chip: {
+  frontendChip: {
     paddingY: 3.5,
     width: {xs: '100%', sm: '30%'},
     margin: 1, 
     fontSize: 20, 
     borderColor: 'hunterGreen.light',
     color: 'hunterGreen.light',
-  }
+  },
+  backendChip: {
+    paddingY: 3.5,
+    width: {xs: '100%', sm: '30%'},
+    margin: 1, 
+    fontSize: 20, 
+    borderColor: 'red.main',
+    color: 'red.main',
+  },
+  generalChip: {
+    paddingY: 3.5,
+    width: {xs: '100%', sm: '30%'},
+    margin: 1, 
+    fontSize: 20, 
+    borderColor: 'white.main',
+    color: 'white.main',
+  },
 }
 
 export default Skills;
