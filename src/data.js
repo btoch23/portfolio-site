@@ -31,11 +31,11 @@ export const projects = [
         id: 0
     },
     {
-        title: 'Todo List Mobile App',
-        subtitle: 'React Native',
-        description: 'A mobile app built with React Native',
-        link: 'https://github.com/btoch23/react-native-todo-list',
-        image: './todolistmobile.png',
+        title: 'SendSheet',
+        subtitle: 'Full-Stack Web App',
+        description: 'A full-stack web app for climbers to log boulder problems and routes',
+        link: 'https://github.com/btoch23/SendSheet',
+        image: './sendsheet.png',
         id: 1
     },
     {
